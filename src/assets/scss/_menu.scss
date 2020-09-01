@@ -1,0 +1,97 @@
+// Main Navigation
+#header-home {
+  #main-nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: all 0.4s ease;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      width: 150px;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+    }
+
+    a {
+      color: $secondary-color;
+      transition: all 0.5s;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+
+      &.current {
+        border-color: $primary-color;
+      }
+    }
+
+    .contact-menu {
+      background: $primary-color;
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      margin: 18px auto 22px auto;
+      padding: inherit;
+      border: inherit;
+      transition: all 0.4s ease;
+
+      a {
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        padding: 0;
+        border: 0;
+        transition: all 0.5s;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+
+        &:hover {
+          background: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .sticky-header {
+    height: 50px !important;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+    a {
+      font-size: 0.9rem !important;
+      padding-bottom: 0 !important;
+    }
+
+    .contact-menu {
+      width: 120px !important;
+      height: 30px !important;
+      margin: auto !important;
+
+      a {
+        line-height: 30px !important;
+      }
+    }
+  }
+}
