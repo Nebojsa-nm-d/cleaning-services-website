@@ -115,3 +115,93 @@
 .parallax-home {
 	background-image: url("../img/slider/slider-2.jpg");
 }
+
+// Home page Packages
+.home-packages {
+	background: $light-color;
+	padding: 100px 0;
+
+	&-headlines {
+		text-align: center;
+		width: 60%;
+		margin: auto;
+	}
+
+	&-content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3rem;
+		margin-top: 40px;
+		padding: 10px 40px;
+		text-align: center;
+
+		.card {
+			margin-bottom: 20px;
+			height: initial;
+
+			h4 {
+				display: inline;
+				padding: 5px 0;
+			}
+
+			.price {
+				font-size: 4rem;
+				margin: 0;
+				margin-top: 20px;
+
+				sup {
+					font-size: 1rem;
+					margin-left: 5px;
+				}
+			}
+
+			.period {
+				margin: 0;
+				font-size: 0.8rem;
+			}
+
+			&-content {
+				margin-top: 40px;
+
+				p {
+					margin-bottom: 1.5rem;
+				}
+			}
+
+			.btn {
+				margin-top: 40px;
+			}
+
+			&:hover {
+				transform: initial;
+				background: initial;
+				color: initial;
+			}
+
+			&-highlight {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+.home-contact {
+	padding: 100px 0;
+
+	&-container {
+		display: grid;
+		grid-template-columns: 3fr 6fr;
+		gap: 4rem;
+	}
+
+	&-content {
+		display: grid;
+		justify-content: center;
+		align-content: center;
+		padding: 0 100px;
+
+		h3 {
+			margin-bottom: 25px;
+		}
+	}
+}
