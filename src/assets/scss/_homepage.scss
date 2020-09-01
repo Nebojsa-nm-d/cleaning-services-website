@@ -84,3 +84,34 @@
 		padding: 30px;
 	}
 }
+
+// Home page Section About Us
+.home-about {
+	background: #fff;
+	padding: 150px 0;
+
+	&-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.5rem;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0 20% 0 20%;
+		}
+
+		h2 {
+			margin-bottom: 25px;
+		}
+
+		.btn {
+			margin: 50px 0;
+		}
+	}
+}
+
+// Parallax image
+.parallax-home {
+	background-image: url("../img/slider/slider-2.jpg");
+}
