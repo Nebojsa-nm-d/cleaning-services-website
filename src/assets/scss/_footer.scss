@@ -1,0 +1,25 @@
+#footer {
+  background: #fff;
+  color: $dark-color;
+  padding: 50px 0;
+
+  p,
+  a {
+    color: $medium-dark-color;
+  }
+
+  a {
+    transition: color 0.5s;
+    display: block;
+
+    &:hover {
+      color: $dark-color;
+    }
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+}
