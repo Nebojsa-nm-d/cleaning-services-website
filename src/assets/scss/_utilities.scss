@@ -43,3 +43,34 @@ h4 {
 		background: $light-color;
 	}
 }
+
+.card {
+	background: #fff;
+	height: 250px;
+	padding: 1.5rem;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+	transition: all 0.5s;
+	line-height: 1.2;
+
+	h4 {
+		padding: 10px 0;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		background: $primary-color;
+		color: #fff;
+		cursor: default;
+		box-shadow: 5px 5px 10px 0 rgba(69, 150, 203, 0.8);
+	}
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}

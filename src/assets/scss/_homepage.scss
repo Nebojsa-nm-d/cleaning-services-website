@@ -67,3 +67,20 @@
 		}
 	}
 }
+
+// Home Page Services
+.home-services {
+	padding: 60px 0;
+	background: $light-color;
+
+	h2 {
+		text-align: center;
+	}
+
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+		padding: 30px;
+	}
+}
