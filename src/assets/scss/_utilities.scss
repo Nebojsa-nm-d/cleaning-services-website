@@ -62,7 +62,7 @@ h4 {
 		background: $primary-color;
 		color: #fff;
 		cursor: default;
-		box-shadow: 5px 5px 10px 0 rgba(69, 150, 203, 0.8);
+		box-shadow: 5px 5px 10px 0 $primary-color-transparent;
 	}
 }
 
