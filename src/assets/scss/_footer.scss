@@ -1,25 +1,42 @@
 #footer {
-  background: #fff;
-  color: $dark-color;
-  padding: 50px 0;
+	background: #fff;
+	color: $dark-color;
+	padding: 20px 0;
+	border-top: 5px solid $primary-color;
 
-  p,
-  a {
-    color: $medium-dark-color;
-  }
+	p,
+	a {
+		color: $medium-dark-color;
+	}
 
-  a {
-    transition: color 0.5s;
-    display: block;
+	a {
+		transition: color 0.5s;
+		display: block;
 
-    &:hover {
-      color: $dark-color;
-    }
-  }
+		&:hover {
+			color: $dark-color;
+		}
+	}
 
-  .footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem;
-  }
+	.footer-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 5rem;
+	}
+
+	.footer-column-1 {
+		p {
+			margin-top: 10px;
+
+			i {
+				font-size: 2em;
+				color: $primary-color;
+				width: 40px;
+			}
+
+			a {
+				display: inline-block;
+			}
+		}
+	}
 }
