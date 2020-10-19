@@ -1,6 +1,25 @@
-// Homepage Packages
+// Packages pages
+.showcase-packages {
+	background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+	height: 50vh;
+
+	&-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-top: 170px;
+
+		h1 {
+			color: $primary-color;
+			font-size: 60px;
+			line-height: 1.2em;
+		}
+	}
+}
+
 .packages {
-	padding: 150px 0 100px 0;
+	padding: 80px 0;
 
 	&-headlines {
 		text-align: center;
