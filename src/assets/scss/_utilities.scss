@@ -48,6 +48,24 @@ h4 {
 	}
 }
 
+.showcase {
+	height: 50vh;
+
+	&-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-top: 170px;
+
+		h1 {
+			color: $primary-color;
+			font-size: 60px;
+			line-height: 1.2em;
+		}
+	}
+}
+
 .card {
 	background: #fff;
 	height: 250px;
