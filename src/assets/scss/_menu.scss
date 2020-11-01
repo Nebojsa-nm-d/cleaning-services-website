@@ -2,7 +2,7 @@
 #header-home {
 	#main-nav {
 		position: fixed;
-		height: 80px;
+		height: $menu-height;
 		width: 100%;
 		background: #fff;
 		z-index: 1;
@@ -77,12 +77,16 @@
 	}
 
 	.sticky-header {
-		height: 50px !important;
+		height: $menu--scroll-height;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
 		a {
 			font-size: 0.9rem !important;
 			padding-bottom: 0 !important;
+		}
+
+		img {
+			padding: 3px 0 !important;
 		}
 
 		.contact-menu {
