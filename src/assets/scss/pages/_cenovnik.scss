@@ -6,23 +6,95 @@
 .prices {
 	padding: 80px 0;
 
-	&-headlines {
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 0.5rem;
+		margin: 40px;
 		text-align: center;
-		width: 60%;
-		margin: auto;
-		margin-bottom: 100px;
+	}
+}
 
-		h2 {
-			font-size: 1.8rem;
+.pricecard {
+	&__side {
+		background: $white;
+		border-radius: 5px;
+		box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+		transition: all 0.5s;
+		line-height: 1.2;
+		margin-bottom: 20px;
+		position: relative;
+
+		&--front {
+		}
+		&--back {
+			display: none;
+
+			.btn {
+				margin-bottom: 30px;
+			}
 		}
 	}
 
-	&-content {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 3rem;
-		margin: 40px 0 20px 0;
-		padding: 10px 40px;
-		text-align: center;
+	&__img {
+		height: 15rem;
+		margin-bottom: 1rem;
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+		background-size: cover;
+
+		&--1 {
+			background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../img/packages/packages-1.jpg") no-repeat center center/cover;
+		}
+	}
+
+	&__title {
+		background: $primary-color-transparent;
+		color: #fff;
+		font-size: 1.2rem;
+		padding: 10px;
+
+		h4 {
+			display: inline;
+			font-size: 1.6rem;
+		}
+	}
+
+	&__content {
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			height: 70px;
+			font-size: 0.8rem;
+			padding: 3px;
+			margin: 0;
+			border-bottom: 1px solid $white;
+
+			.far {
+				font-size: 1.2rem;
+				margin-right: 5px;
+			}
+
+			.fa-check-circle {
+				color: $green;
+			}
+
+			.fa-clock {
+				color: $purple;
+			}
+
+			.fa-times-circle {
+				color: $red;
+			}
+
+			&:nth-child(odd) {
+				background: red;
+			}
+
+			&:nth-child(even) {
+				background: red;
+			}
+		}
 	}
 }
