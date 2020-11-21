@@ -30,21 +30,20 @@
 			display: flex;
 			align-items: center;
 			padding: 1rem 1.5rem;
-		}
+			a {
+				color: $secondary-color;
+				transition: all 0.5s;
+				padding-bottom: 5px;
+				border-bottom: 2px solid transparent;
 
-		a {
-			color: $secondary-color;
-			transition: all 0.5s;
-			padding-bottom: 5px;
-			border-bottom: 2px solid transparent;
+				&:hover {
+					color: $primary-color;
+					border-color: $primary-color;
+				}
 
-			&:hover {
-				color: $primary-color;
-				border-color: $primary-color;
-			}
-
-			&.current {
-				border-color: $primary-color;
+				&.current {
+					border-color: $primary-color;
+				}
 			}
 		}
 

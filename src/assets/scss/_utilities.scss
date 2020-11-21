@@ -74,6 +74,18 @@ h4 {
 	position: relative;
 }
 
+//Page Headlines
+.page-headline {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 100px;
+
+	h2 {
+		font-size: 1.8rem;
+	}
+}
+
 // Pricing cards
 .card {
 	background: $white;

@@ -6,17 +6,6 @@
 .packages {
 	padding: 80px 0;
 
-	&-headlines {
-		text-align: center;
-		width: 60%;
-		margin: auto;
-		margin-bottom: 100px;
-
-		h2 {
-			font-size: 1.8rem;
-		}
-	}
-
 	&-content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
