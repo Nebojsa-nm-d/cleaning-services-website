@@ -51,11 +51,16 @@ h4 {
 .showcase {
 	height: 50vh;
 
+	.container {
+		height: 100%;
+	}
+
 	&-content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		height: 100%;
 
 		h1 {
 			color: $primary-color;

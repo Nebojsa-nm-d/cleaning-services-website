@@ -8,7 +8,7 @@
 
 	&__content {
 		display: grid;
-		grid-template-columns: repeat(8, 1fr);
+		grid-template-columns: repeat(6, 1fr);
 		gap: 0.5rem;
 		margin: 40px;
 		text-align: center;
@@ -16,7 +16,7 @@
 }
 
 .pricecard {
-	height: 60rem;
+	height: 40rem;
 	position: relative;
 	backface-visibility: hidden;
 
@@ -40,14 +40,15 @@
 		overflow: hidden;
 		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 
-		&--front {
-		}
 		&--back {
+			background: $secondary-color;
 			transform: rotateY(180deg);
-
-			.btn {
-				transform: rotate(-45deg);
-			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+			color: $white;
 		}
 	}
 
@@ -56,10 +57,39 @@
 		margin-bottom: 1rem;
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 
 		&--1 {
-			background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../img/packages/packages-1.jpg") no-repeat center center/cover;
+			background-image: url("../img/prices/prices-1.jpg");
 		}
+		&--2 {
+			background-image: url("../img/prices/prices-2.jpg");
+		}
+		&--3 {
+			background-image: url("../img/prices/prices-3.jpg");
+		}
+		&--4 {
+			background-image: url("../img/prices/prices-4.jpg");
+		}
+		&--5 {
+			background-image: url("../img/prices/prices-5.jpg");
+		}
+		&--6 {
+			background-image: url("../img/prices/prices-6.jpg");
+		}
+	}
+
+	&__price {
+		font-size: 2.5rem;
+		margin: 0;
+		font-weight: bold;
+	}
+
+	&__period {
+		font-size: 1.5rem;
+		margin-bottom: 50px;
 	}
 
 	&__title {
