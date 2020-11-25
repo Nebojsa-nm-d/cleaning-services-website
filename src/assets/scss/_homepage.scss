@@ -70,7 +70,6 @@
 // Home Page Services
 .home-menu-section {
 	padding: 60px 0;
-	background: $light-color;
 
 	&-images {
 		display: grid;
@@ -186,19 +185,12 @@
 
 // Home page Section About Us
 .home-about {
-	background: $white;
 	padding: 150px 0;
 
-	&-container {
+	&__container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2.5rem;
-
-		img {
-			height: 100%;
-			object-fit: cover;
-			border-radius: 0 20% 0 20%;
-		}
 
 		h2 {
 			margin-bottom: 25px;
@@ -217,7 +209,6 @@
 
 // Homepage Packages
 .home-packages {
-	background: $light-color;
 	padding: 100px 0;
 
 	&-headlines {
@@ -240,20 +231,14 @@
 .home-contact {
 	padding: 100px 0;
 
-	&-container {
+	&__container {
 		display: grid;
 		grid-template-columns: 2fr 3fr;
 		gap: 4rem;
 		height: 500px;
-
-		img {
-			height: 100%;
-			object-fit: cover;
-			border-radius: 0 20% 0 20%;
-		}
 	}
 
-	&-content {
+	&__content {
 		display: grid;
 		justify-content: center;
 		align-content: center;
