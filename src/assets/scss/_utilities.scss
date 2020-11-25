@@ -48,6 +48,16 @@ h4 {
 	}
 }
 
+// Backgrounds
+.white-bg {
+	background: $white;
+}
+
+.light-bg {
+	background: $light-color;
+}
+
+// Showcase
 .showcase {
 	height: 50vh;
 
@@ -70,6 +80,7 @@ h4 {
 	}
 }
 
+// Images
 .parallax {
 	background-attachment: fixed;
 	background-position: center;
@@ -77,6 +88,18 @@ h4 {
 	background-size: cover;
 	height: 500px;
 	position: relative;
+}
+
+.image-right {
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0 20% 0 20%;
+}
+
+.image-left {
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20% 0 20% 0;
 }
 
 //Page Headlines
@@ -98,7 +121,7 @@ h4 {
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
 	transition: all 0.5s;
 	line-height: 1.2;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	position: relative;
 
 	&:hover {
