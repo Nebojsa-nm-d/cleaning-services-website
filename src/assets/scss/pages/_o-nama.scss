@@ -1,0 +1,18 @@
+.about-us {
+	background: $white;
+	padding: 150px 0;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.5rem;
+
+		h2 {
+			margin-bottom: 25px;
+		}
+
+		.btn {
+			margin: 50px 0;
+		}
+	}
+}
