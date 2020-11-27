@@ -2,17 +2,72 @@
 	background: $white;
 	padding: 150px 0;
 
-	&__container {
+	&__2-column {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2.5rem;
+	}
 
+	&__3-column {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10rem;
+	}
+
+	&__content {
 		h2 {
 			margin-bottom: 25px;
 		}
 
 		.btn {
 			margin: 50px 0;
+		}
+	}
+
+	.statements {
+		margin-top: 50px;
+
+		&__statement {
+			height: 200px;
+			position: relative;
+
+			&--vision {
+				background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+			}
+			&--mision {
+				background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+			}
+			&--goals {
+				background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+			}
+		}
+
+		&__icon {
+			background: $primary-color-transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 120px;
+			width: 50%;
+			position: absolute;
+			bottom: 30px;
+
+			i {
+				font-size: 3rem;
+				color: $white;
+			}
+		}
+
+		&_list {
+			margin-top: 20px;
+
+			.fa-ul {
+				margin-left: 2em;
+			}
+
+			i {
+				color: $primary-color;
+			}
 		}
 	}
 }
