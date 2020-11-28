@@ -1,27 +1,20 @@
 .about-us {
 	background: $white;
-	padding: 150px 0;
 
-	&__2-column {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+	&__showcase {
+		background: url("../img/showcase/showcase-about-us.jpg") no-repeat center center/cover;
+	}
+
+	.grid-2-columns {
 		gap: 2.5rem;
 	}
 
-	&__3-column {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+	.grid-3-columns {
 		gap: 10rem;
 	}
 
-	&__content {
-		h2 {
-			margin-bottom: 25px;
-		}
-
-		.btn {
-			margin: 50px 0;
-		}
+	&__about {
+		padding: 150px 0;
 	}
 
 	.statements {
@@ -32,13 +25,13 @@
 			position: relative;
 
 			&--vision {
-				background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+				background: url("../img/about-us/about-us-vision.jpg") no-repeat center center/cover;
 			}
 			&--mision {
-				background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+				background: url("../img/about-us/about-us-mision.jpg") no-repeat center center/cover;
 			}
 			&--goals {
-				background: url("../img/showcase/showcase-packages.jpg") no-repeat center center/cover;
+				background: url("../img/about-us/about-us-goal.jpg") no-repeat center center/cover;
 			}
 		}
 
@@ -68,6 +61,19 @@
 			i {
 				color: $primary-color;
 			}
+		}
+	}
+
+	&__parallax {
+		background-image: url("../img/about-us/about-us-parallax.jpg");
+	}
+
+	&__our-team {
+		padding: 150px 0;
+		background: $light-color;
+
+		.btn {
+			margin: 50px 0;
 		}
 	}
 }
