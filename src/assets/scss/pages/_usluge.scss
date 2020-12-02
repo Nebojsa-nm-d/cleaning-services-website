@@ -28,4 +28,12 @@
 			}
 		}
 	}
+
+	&__tab-content {
+		display: none;
+
+		&.current {
+			display: block;
+		}
+	}
 }
