@@ -16,11 +16,11 @@ $(function () {
 	});
 
 	// Services page
-	$(".services__tab").on("click", function () {
+	$(".services .tab").on("click", function () {
 		var tab = $(this).attr("data-tab");
 
-		$(".services__tab").removeClass("current");
-		$(".services__tab-content").removeClass("current");
+		$(".services .tab").removeClass("current");
+		$(".services .tab-content").removeClass("current");
 
 		$(this).addClass("current");
 		$("#" + tab).addClass("current");
