@@ -114,6 +114,11 @@ h4 {
 	}
 }
 
+// Font bold
+.strong {
+	font-weight: bold;
+}
+
 // Pricing cards
 .card {
 	background: $white;
@@ -230,8 +235,8 @@ h4 {
 	grid-template-columns: repeat(3, 1fr);
 }
 
-// Figure
-figure {
+// Selection Card
+.selection-card {
 	position: relative;
 	overflow: hidden;
 	background: #3085a3;
@@ -278,7 +283,7 @@ figure {
 	}
 
 	&:hover {
-		figcaption::before,
+		figcaption:before,
 		p {
 			opacity: 1;
 			-webkit-transform: translate3d(0, 0, 0);
