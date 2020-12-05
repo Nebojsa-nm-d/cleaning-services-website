@@ -2,7 +2,7 @@
 	background: $white;
 
 	&__showcase {
-		background: url("../img/showcase/showcase-about-us.jpg") no-repeat center center/cover;
+		background: url("../img/showcase/showcase-services.jpg") no-repeat center center/cover;
 	}
 
 	.tabs {
@@ -68,7 +68,7 @@
 		}
 
 		&__primary-paragraph {
-			font-size: 1&__5rem;
+			font-size: 1.5rem;
 			font-weight: bold;
 		}
 
@@ -77,6 +77,10 @@
 		}
 
 		&__fa-list {
+			li {
+				margin-bottom: 1rem;
+			}
+
 			.fa-ul {
 				margin-left: 3rem;
 
@@ -100,6 +104,10 @@
 		&__btn {
 			text-align: center;
 			margin-top: 50px;
+
+			&--secondary-btn {
+				margin: 2rem 0;
+			}
 
 			.btn {
 				min-width: 230px;
