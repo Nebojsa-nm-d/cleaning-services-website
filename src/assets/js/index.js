@@ -19,6 +19,13 @@ $(function () {
 	$(".services .tab").on("click", function () {
 		var tab = $(this).attr("data-tab");
 
+		$("html, body").animate(
+			{
+				scrollTop: $("#services-tabs").offset().top,
+			},
+			500
+		);
+
 		$(".services .tab").removeClass("current");
 		$(".services .tab-content").removeClass("current");
 
