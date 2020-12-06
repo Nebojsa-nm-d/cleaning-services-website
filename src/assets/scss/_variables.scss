@@ -2,6 +2,7 @@
 // - primary
 $primary-color: #f19720;
 $primary-color-transparent: rgba(241, 151, 32, 0.8);
+$primary-color-transparent-lighter: rgba(241, 151, 32, 0.3);
 
 // - secondary
 $secondary-color: #fbc734;
@@ -34,3 +35,6 @@ $website-width: 1200px;
 // - menu
 $menu-height: 80px;
 $menu--scroll-height: 50px !important;
+
+// - faq
+$faq-btn-transition: 0.8s;
