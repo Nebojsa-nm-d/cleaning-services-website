@@ -83,4 +83,6 @@ $(function () {
 			$(this).siblings(".faq__answer").slideDown(200);
 		}
 	});
+
+	AOS.init();
 });

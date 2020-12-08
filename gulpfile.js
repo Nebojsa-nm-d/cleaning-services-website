@@ -27,7 +27,12 @@ const srcFiles = {
 // Assets Files Variables
 const assetsFiles = {
 	scssFiles: assetsScssPath + "**/*.scss",
-	jsFiles: ["node_modules/jquery/dist/jquery.min.js", "node_modules/slick-carousel/slick/slick.js", assetsJsPath + "index.js"],
+	jsFiles: [
+		"node_modules/jquery/dist/jquery.min.js",
+		"node_modules/slick-carousel/slick/slick.js",
+		"node_modules/aos/dist/aos.js",
+		assetsJsPath + "index.js",
+	],
 };
 
 // Source Paths Variables
