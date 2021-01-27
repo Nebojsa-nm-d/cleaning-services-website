@@ -26,7 +26,7 @@ const srcFiles = {
 
 // Assets Files Variables
 const assetsFiles = {
-	scssFiles: assetsScssPath + "**/*.scss",
+	scssFiles: ["node_modules/aos/dist/aos.css", assetsScssPath + "**/*.scss"],
 	jsFiles: [
 		"node_modules/jquery/dist/jquery.min.js",
 		"node_modules/slick-carousel/slick/slick.js",
@@ -58,6 +58,7 @@ function scssCompile() {
 		.pipe(sourcemaps.init())
 		.pipe(sass().on("error", sass.logError))
 		.pipe(postcss([autoprefixer(), cssnano()]))
+		.pipe(concat("main.css"))
 		.pipe(sourcemaps.write("."))
 		.pipe(dest(srcPaths.CSSPath))
 		.pipe(browserSync.stream());
