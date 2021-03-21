@@ -6,7 +6,7 @@ RewriteRule ^(.*)$ $1.html
 
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?mysite\.com [NC]
-RewriteRule .*\.(jp(e)?g|gif|bmp|png)$ https://imgur.com/ZtXiCBw.gif [L,R]
+RewriteRule .*\.(jp(e)?g|gif|bmp|webp)$ https://imgur.com/ZtXiCBw.gif [L,R]
 
 <Files .htaccess>
   Order allow,deny

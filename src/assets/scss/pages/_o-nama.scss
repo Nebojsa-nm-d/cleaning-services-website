@@ -2,7 +2,7 @@
 	background: $white;
 
 	&__showcase {
-		background: url("../img/showcase/showcase-about-us.jpg") no-repeat center center/cover;
+		background: url("../img/showcase/showcase-about-us.webp") no-repeat center center/cover;
 	}
 
 	.grid-2-columns {
@@ -25,13 +25,13 @@
 			position: relative;
 
 			&--vision {
-				background: url("../img/about-us/about-us-vision.jpg") no-repeat center center/cover;
+				background: url("../img/about-us/about-us-vision.webp") no-repeat center center/cover;
 			}
 			&--mision {
-				background: url("../img/about-us/about-us-mision.jpg") no-repeat center center/cover;
+				background: url("../img/about-us/about-us-mision.webp") no-repeat center center/cover;
 			}
 			&--goals {
-				background: url("../img/about-us/about-us-goal.jpg") no-repeat center center/cover;
+				background: url("../img/about-us/about-us-goal.webp") no-repeat center center/cover;
 			}
 		}
 
@@ -65,7 +65,7 @@
 	}
 
 	&__parallax {
-		background-image: url("../img/about-us/about-us-parallax.jpg");
+		background-image: url("../img/about-us/about-us-parallax.webp");
 	}
 
 	&__our-team {
