@@ -1,17 +1,26 @@
 // Main Navigation
 #header-home {
 	#main-nav {
-		@include largescreen {
-			position: fixed;
-			height: $menu-height;
-			width: 100%;
-			background: $white;
-			z-index: 100;
-			@include transition();
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
+		height: $menu-height;
+		position: fixed;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 0 100px;
+		background: $white;
+		@include transition();
+		z-index: 100;
+
+		@include large-screen {
+			padding: 0 50px;
+		}
+
+		@include medium-screen {
+			display: block;
+			height: initial;
+			padding: 0;
 		}
 
 		.navbrand {
@@ -21,58 +30,83 @@
 			align-items: center;
 
 			img {
-				color: $primary-color;
-				height: 100%;
-				padding: 10px 0;
-				text-transform: uppercase;
 				width: auto;
+				color: $primary-color;
+				text-transform: uppercase;
+				@include transition();
+				object-fit: contain;
+
+				@include medium-screen {
+					margin-left: 20px;
+				}
 			}
 
 			.burger {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				cursor: pointer;
-				border: none;
-				outline: none;
-				background: none;
-				@include transition();
+				display: none;
 
-				&-close {
-					display: none;
-				}
+				@include medium-screen {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					border: none;
+					outline: none;
+					background: none;
+					@include transition();
+					margin-right: 20px;
 
-				&.active {
-					.burger-open {
+					&-close {
 						display: none;
 					}
-					.burger-close {
-						display: flex;
-					}
-				}
 
-				// Media Query for Desktop
-				@include largescreen {
-					display: none;
+					&.active {
+						.burger-open {
+							display: none;
+						}
+						.burger-close {
+							display: flex;
+						}
+					}
 				}
 			}
 		}
 
 		.menu {
 			width: 100%;
-			height: 0;
-			overflow: hidden;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			height: auto;
+			background: $white;
 			@include transition();
 
-			ul {
-				display: flex;
+			@include medium-screen {
+				height: 0;
+				flex-direction: column;
+				overflow: hidden;
+				@include transition();
+			}
+
+			&.active {
+				width: 100%;
+				height: 400px;
 			}
 
 			li {
 				display: flex;
 				align-items: center;
 				padding: 1rem 1.5rem;
+
+				@include medium-screen {
+					width: 100%;
+					border-bottom: 1px solid $primary-color;
+				}
+
+				&:last-child {
+					border: none;
+				}
 
 				a {
 					color: $secondary-color;
@@ -91,37 +125,25 @@
 				}
 			}
 
-			&.active {
-				width: 100%;
-				height: 10rem;
-				margin: 1rem 0;
-			}
-
-			// Media Query for Desktop
-			@include largescreen {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				height: auto;
-
-				&-item {
-					padding: 0;
-					margin: 0 0.5rem;
-				}
-			}
-
 			.contact-menu {
 				background: $primary-color;
 				width: 150px;
 				height: 40px;
 				border-radius: 5px;
-				margin: 18px auto 22px auto;
 				padding: inherit;
 				border: inherit;
 				@include transition();
 
+				@include medium-screen {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+
 				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
 					height: 100%;
 					width: 100%;
 					color: $white;
@@ -129,8 +151,6 @@
 					border: 0;
 					@include transition();
 					border-radius: 5px;
-					text-align: center;
-					line-height: 40px;
 
 					&:hover {
 						background: $secondary-color;
@@ -139,28 +159,35 @@
 				}
 			}
 		}
-	}
 
-	.sticky-header {
-		height: $menu--scroll-height;
-		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-
-		a {
-			font-size: 0.9rem !important;
-			padding-bottom: 0 !important;
-		}
-
-		img {
-			padding: 3px 0 !important;
-		}
-
-		.contact-menu {
-			width: 120px !important;
-			height: 30px !important;
-			margin: auto !important;
+		&.sticky-header {
+			height: $menu-scroll-height;
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
 			a {
-				line-height: 30px !important;
+				font-size: 0.9rem;
+				padding-bottom: 0;
+			}
+
+			img {
+				padding: 0;
+				height: $menu-scroll-height;
+				@include transition();
+			}
+
+			.menu {
+				&.active {
+					height: 300px;
+				}
+
+				li {
+					padding: 0.5rem 1.5rem;
+				}
+
+				.contact-menu {
+					width: 120px;
+					height: 30px;
+				}
 			}
 		}
 	}
