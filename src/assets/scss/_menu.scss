@@ -109,14 +109,33 @@
 				}
 
 				a {
+					position: relative;
+					display: flex;
+					height: 100%;
+					width: 100%;
+					align-items: center;
+					border-bottom: 2px solid transparent;
 					color: $secondary-color;
 					@include transition();
-					padding-bottom: 5px;
-					border-bottom: 2px solid transparent;
 
-					&:hover {
-						color: $primary-color;
-						border-color: $primary-color;
+					&:after {
+						content: "";
+						position: absolute;
+						width: 0;
+						height: 2px;
+						right: 0;
+						bottom: -2px;
+						background: $primary-color;
+						@include transition(width, 0.2s);
+
+						@include medium-screen {
+							content: none;
+						}
+					}
+
+					&:hover:after {
+						width: 100%;
+						background: $primary-color;
 					}
 
 					&.current {
@@ -151,6 +170,10 @@
 					border: 0;
 					@include transition();
 					border-radius: 5px;
+
+					&:after {
+						content: none;
+					}
 
 					&:hover {
 						background: $secondary-color;
