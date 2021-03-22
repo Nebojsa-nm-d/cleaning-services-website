@@ -24,6 +24,10 @@
 			height: 100%;
 			width: $website-width;
 			margin: auto;
+
+			@media (max-width: 767px) {
+				grid-template-columns: repeat(1, 1fr);
+			}
 		}
 
 		.slider-text-right {
@@ -57,12 +61,22 @@
 			animation-name: fadeInLeft;
 			animation-duration: 2s;
 			opacity: 1;
+
+			@media (max-width: 1024px) {
+				width: 500px;
+				margin-left: 10%;
+			}
 		}
 
 		.content-right {
 			animation-name: fadeInRight;
 			animation-duration: 2s;
 			opacity: 1;
+
+			@media (max-width: 1024px) {
+				width: 500px;
+				margin-right: 10%;
+			}
 		}
 	}
 }
