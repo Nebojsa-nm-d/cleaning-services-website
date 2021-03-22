@@ -14,55 +14,74 @@
 	<body>
 		<header id="header-home">
 			<nav id="main-nav">
-				<div class="container">
+				<div class="navbrand">
 					<a href="index.html">
 						<img src="./img/logo/cista-kuca-horizontal-logo.webp" alt="Čista Kuća Logo" />
 					</a>
-					<ul>
-						<li><a href="index.html" class="current">Home</a></li>
-						<li><a href="/usluge.html">Usluge</a></li>
-						<li><a href="/cenovnik.html">Cenovnik</a></li>
-						<li><a href="/paketi.html">Paketi</a></li>
-						<li><a href="/o-nama.html">O Nama</a></li>
-						<li class="contact-menu"><a href="/kontakt.html">Kontakt</a></li>
-					</ul>
+					<div class="burger" id="burger">
+						<span class="burger-open">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+								<g fill="#252a32" fill-rule="evenodd">
+									<path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+								</g>
+							</svg>
+						</span>
+						<span class="burger-close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+								<path
+									fill="#252a32"
+									fill-rule="evenodd"
+									d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+								/>
+							</svg>
+						</span>
+					</div>
 				</div>
+
+				<ul class="menu" id="menu">
+					<li><a href="index.html" class="current">Home</a></li>
+					<li><a href="/usluge.html">Usluge</a></li>
+					<li><a href="/cenovnik.html">Cenovnik</a></li>
+					<li><a href="/paketi.html">Paketi</a></li>
+					<li><a href="/o-nama.html">O Nama</a></li>
+					<li class="contact-menu"><a href="/kontakt.html">Kontakt</a></li>
+				</ul>
 			</nav>
+		</header>
 
-			<div class="homepage-slider">
-				<div class="sliders">
-					<div class="slider slider-1">
-						<div class="slider-container">
-							<div class="slider-content content-left">
-								<h2>Usluge čišćenje</h2>
-								<p>Mi Vam pomažemo da Vaš dom uvek blista. Vršimo generalno čišćenje Vaših stanova. Uverite se u naš rad.</p>
-								<a href="/usluge" class="btn-secondary">Pogledajte</a>
-							</div>
+		<div class="homepage-slider">
+			<div class="sliders">
+				<div class="slider slider-1">
+					<div class="slider-container">
+						<div class="slider-content content-left">
+							<h2>Usluge čišćenje</h2>
+							<p>Mi Vam pomažemo da Vaš dom uvek blista. Vršimo generalno čišćenje Vaših stanova. Uverite se u naš rad.</p>
+							<a href="/usluge" class="btn-secondary">Pogledajte</a>
 						</div>
 					</div>
+				</div>
 
-					<div class="slider slider-2">
-						<div class="slider-container">
-							<div class="slider-content slider-text-right content-right">
-								<h2>Za Vaš nameštaj.</h2>
-								<p>Vratite sjaj svom kauču, jer mi vršimo dubinsko čišćenje nameštaja. Da sve ponovo zablista.</p>
-								<a href="/ciscenje-namestaja" class="btn-secondary">Pogledajte</a>
-							</div>
+				<div class="slider slider-2">
+					<div class="slider-container">
+						<div class="slider-content slider-text-right content-right">
+							<h2>Za Vaš nameštaj.</h2>
+							<p>Vratite sjaj svom kauču, jer mi vršimo dubinsko čišćenje nameštaja. Da sve ponovo zablista.</p>
+							<a href="/ciscenje-namestaja" class="btn-secondary">Pogledajte</a>
 						</div>
 					</div>
+				</div>
 
-					<div class="slider slider-3">
-						<div class="slider-container">
-							<div class="slider-content content-left">
-								<h2>Paketi</h2>
-								<p>Uštedite tako što ćete se pretplatiti na neki od naših paketa. Neka Vaša kuća bude stalno čista.</p>
-								<a href="/paketi" class="btn-secondary">Pogledajte</a>
-							</div>
+				<div class="slider slider-3">
+					<div class="slider-container">
+						<div class="slider-content content-left">
+							<h2>Paketi</h2>
+							<p>Uštedite tako što ćete se pretplatiti na neki od naših paketa. Neka Vaša kuća bude stalno čista.</p>
+							<a href="/paketi" class="btn-secondary">Pogledajte</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
 
 		<section class="home-menu-section light-bg">
 			<div class="container">
