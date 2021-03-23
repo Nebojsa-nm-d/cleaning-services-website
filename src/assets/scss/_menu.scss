@@ -28,6 +28,11 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			height: 100%;
+
+			a {
+				height: 100%;
+			}
 
 			img {
 				width: auto;
@@ -140,6 +145,10 @@
 
 					&.current {
 						border-color: $primary-color;
+
+						@include medium-screen {
+							border: none;
+						}
 					}
 				}
 			}
@@ -188,7 +197,7 @@
 			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
 			a {
-				font-size: 0.9rem;
+				font-size: 0.9em;
 				padding-bottom: 0;
 			}
 
