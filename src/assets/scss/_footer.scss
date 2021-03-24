@@ -20,8 +20,20 @@
 
 	.footer-container {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: 5rem;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 60px;
+
+		@include large-screen {
+			padding: 0 25px;
+		}
+
+		@include medium-screen {
+			gap: 20px;
+		}
+
+		@include small-screen {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 
 	.footer-column-1 {
