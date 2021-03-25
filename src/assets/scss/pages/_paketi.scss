@@ -13,5 +13,9 @@
 		margin: 40px 0 20px 0;
 		padding: 10px 40px;
 		text-align: center;
+
+		@include large-screen {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 }
