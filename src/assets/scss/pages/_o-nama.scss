@@ -11,6 +11,10 @@
 
 	.grid-3-columns {
 		gap: 10rem;
+
+		@include medium-screen {
+			gap: 3rem;
+		}
 	}
 
 	&__about {
@@ -19,6 +23,10 @@
 
 	.statements {
 		margin-top: 50px;
+
+		@include small-screen {
+			margin-top: 10px;
+		}
 
 		&__statement {
 			height: 200px;
