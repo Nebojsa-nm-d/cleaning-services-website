@@ -32,6 +32,9 @@
 
 			a {
 				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 			img {
@@ -203,7 +206,7 @@
 
 			img {
 				padding: 0;
-				height: $menu-scroll-height;
+				height: 40px;
 				@include transition();
 			}
 
