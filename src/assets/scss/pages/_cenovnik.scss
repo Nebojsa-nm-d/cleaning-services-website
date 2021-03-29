@@ -57,6 +57,16 @@
 			text-align: center;
 			flex-direction: column;
 			color: $white;
+
+			@include medium-screen {
+				padding: 25px;
+			}
+
+			.btn {
+				@include medium-screen {
+					width: 170px;
+				}
+			}
 		}
 	}
 
