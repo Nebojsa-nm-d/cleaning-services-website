@@ -14,12 +14,31 @@
 	gap: 2rem;
 	padding: 80px 0;
 
+	@include medium-screen {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	&__topic {
 		padding: 0 30px;
+
+		@include medium-screen {
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include small-screen {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.5rem;
+		}
 	}
 
 	&__btn {
 		margin-bottom: 2rem;
+
+		@include medium-screen {
+			margin-bottom: 0;
+		}
 
 		.btn {
 			background: $primary-color-transparent-lighter;
@@ -123,6 +142,14 @@
 		}
 	}
 
+	&__qs-as {
+		margin-top: 50px;
+
+		@include medium-screen {
+			margin: 0;
+		}
+	}
+
 	&__q-a {
 		display: none;
 		&.current {
@@ -144,6 +171,10 @@
 			height: 40px;
 			border-bottom: 1px solid $primary-color;
 			transition: 0.2s linear;
+
+			@include small-screen {
+				height: auto;
+			}
 
 			&:hover {
 				color: $primary-color;
